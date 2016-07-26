@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get "/books" => "books#index"
+  get "/books/:id" => "books#show"
+  post "books/:id" => "books#create"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
