@@ -28,4 +28,9 @@ class BooksController < ApplicationController
     redirect_to "/books/#{@book.id}"
   end
 
+  def delete
+    Book.delete(params["id"])
+    redirect_to "/books"
+  end
+
 end

@@ -8,4 +8,8 @@
     Description:<%= text_field_tag "book[description]" %>
     <%= button_to(name = "Update book") %>
 <% end %>
+
+<%= form_tag("/books/#{@book.id}", method: "delete", class: "") do  %>
+  <%= button_to(name = "Delete this book") %>
+<% end %>
 </main>
