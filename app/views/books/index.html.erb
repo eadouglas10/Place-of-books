@@ -9,5 +9,5 @@
 
 <%= form_tag("/books", class: "") do  %>
     <%= text_field_tag "book[name]" %>
-    <%= submit_tag %>
+    <%= button_to(name = "Add title") %>
 <% end %>
